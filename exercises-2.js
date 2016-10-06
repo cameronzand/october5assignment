@@ -69,7 +69,40 @@ function isVowel(char){
 		else {
 			return false;
 		}
+	};
+
+	-------------
+function isVowel(char){
+	char = char.toLowerCase();
+		if (char === "a") {
+		return true;
 	}
+		else if ( char ==="e"){
+			return true;
+		}
+		else if ( char === "i") {
+			return true; 
+		}
+		else if ( char === "o") {
+			return true;
+		}
+		else if ( char === "u"){
+			return true;
+		}
+		else {
+			return false;
+		}
+	};
+
+
+	-------------
+
+	// cleaner version
+	function cleanerIsVowel (char) {
+		var vowels = ['a', 'e', 'i', 'o', 'u'];
+		return vowels.includes (char);
+	};
+
     //...
 
 
