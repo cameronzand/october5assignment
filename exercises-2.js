@@ -16,9 +16,13 @@ function max(x,y){
 // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
 // ---------------------
 
-function maxOfThree(){
-    //...
-}
+function maxOfThree(x,y,z){
+    var max = Math.max(x,y,z);
+    return max;
+
+    }
+
+
 
 // ---------------------
 // Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
