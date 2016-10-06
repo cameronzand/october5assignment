@@ -51,6 +51,18 @@ var getLength = function (hello) {
 
 getLength("Cameron")
 
+------------------------------------
+
+var getLength = function (hello){
+
+	var count = 0;
+	while (hello[count] !== undefined) {
+		count += 1;
+}
+	return count; 
+}
+
+
 
 // Q4
 // Write a function called `greaterThan` that takes
