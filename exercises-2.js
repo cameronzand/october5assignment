@@ -100,7 +100,7 @@ function isVowel(char){
 	// cleaner version
 	function cleanerIsVowel (char) {
 		var vowels = ['a', 'e', 'i', 'o', 'u'];
-		return vowels.includes (char);
+		return vowels.includes (char.toLowerCase());
 	};
 
     //...
