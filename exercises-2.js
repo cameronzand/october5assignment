@@ -10,7 +10,19 @@ function max(x,y){
     else {
     	return (y);
     }
-}
+};
+
+
+
+
+
+
+//What about Ternary Conditionals?
+var ternaryMax (x, y) {
+	return x > y ? x : y;
+};
+
+
 
 // ---------------------
 // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
@@ -21,6 +33,16 @@ function maxOfThree(x,y,z){
     return max;
 
     }
+---------------
+
+function maxOfThree(x,y,z){
+	if (x >= y && x >= z) {return x; }  
+	if (y >= x && y >= z) {return y; }
+	return z;
+};
+
+
+
 
 
 
@@ -29,8 +51,27 @@ function maxOfThree(x,y,z){
 // ---------------------
 
 function isVowel(char){
+		if (char === "a" || char === "A") {
+		return true;
+	}
+		else if ( char ==="e" || char === "E"){
+			return true;
+		}
+		else if ( char === "i" || char === "I") {
+			return true; 
+		}
+		else if ( char === "o" || char === "O") {
+			return true;
+		}
+		else if ( char === "u" || char === "U"){
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
     //...
-}
+
 
 // ---------------------
 // Write a function translate() that will translate a text into "Rovarspraket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
