@@ -26,7 +26,7 @@
 var sum = function (x,y) {
 
 	return(x+y);
-}
+};
 sum(2,2)
 
 
@@ -37,7 +37,7 @@ var avg = function (x,y,z) {
 	var stuff = (x + y + z) / (3);
 	
 	return stuff;
-}
+};
 avg(2,3,4)
 
 
@@ -60,7 +60,7 @@ var getLength = function (hello){
 		count += 1;
 }
 	return count; 
-}
+};
 
 
 
@@ -76,7 +76,7 @@ var greaterThan = function (x,y) {
 			return false;
 
 		}
-	}
+	};
 
 greaterThan(2,4)
 
@@ -90,7 +90,7 @@ greaterThan(2,4)
 var greet = function (name) {
 	return("Hello" + " " + name);
 	 
-}
+};
 greet(Cameron)
 
 
@@ -111,7 +111,7 @@ var madLib = function (quick, fox, fence, jumps) {
 	var sentence = ("The" + quick + "Brown" + fox + fence + jumps ) ;
 	return sentence;
 
-}
+};
 
 
 ///////////////////////////////////////////////////////
