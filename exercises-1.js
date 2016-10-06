@@ -45,10 +45,11 @@ avg(2,3,4)
 // Write a function called `getLength` that takes one
 // parameter (a string) and returns the length
 var getLength = function (hello) {
-	for (var = i, i < 10, i--);
-		return i;
-}
+ return hello.length;
 
+};
+
+getLength("Cameron")
 
 
 // Q4
