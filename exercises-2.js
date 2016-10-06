@@ -102,7 +102,7 @@ function isVowel(char){
 		var vowels = ['a', 'e', 'i', 'o', 'u'];
 		return vowels.includes (char.toLowerCase());
 	};
-
+ //toLowerCase() makes everything lowercase. 
     //...
 
 
@@ -119,6 +119,25 @@ function rovarspraket(phrase){
 // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
 // ---------------------
 
-function reverse(){
-    //...
+function reverse (string){
+   return string.reverse;
 }
+
+//// harder way
+
+function reverse (string){
+	var letters = [];
+	for (var count = 0; count < string.length; count++) {
+		var letter = string[count];
+		letters.unshift(letter);
+	}
+	return letters.join("");
+
+
+}
+
+
+
+
+
+
