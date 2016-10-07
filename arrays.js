@@ -20,29 +20,54 @@ var instructors = [
 // 1. Find largest number
 // ---------------------------
 
-var largest = numbers[0];
+var largest = function (nums){
 
-for (var i = 0; i < numbers.length; i++) {
-    if (largest < numbers[i] ) {
-        largest = numbers[i];
-    }
+	var max = 0;
+
+	for (var count = 0; count < nums.length; count++) {
+		 var currentNum = nums[count];
+		 if (currentNum > max) {
+		 max = currentNum;
+		 } 
+} return max;
+
 }
 
 
+----------------
 
+function findMax (nums) {
+	var biggest = 0;
+	for (var index = 0; index < nums.length; index++) {
+		var currentNum = nums[index];
+		if (currentNum > biggest) {
+			biggest = currentNum;
+		}
+	} 
+	return biggest;
+}
 
+findMax (numbers);
 
 // ---------------------------
 // 2. Find longest string
 // ---------------------------
 
+var longest = function (strings) {
 
+	var max = strings[0];
+
+for (var count = 0; count < strings.length; count++) {
+	if (strings[count].length > max.length) {
+    max = strings[count];
+  	} return max; 
+}
+}
 
 
 // ---------------------------
 // 3. Find even numbers
 // ---------------------------
-
 
 
 // ---------------------------
