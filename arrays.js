@@ -6,7 +6,7 @@ var strings = ['this','is','a','collection','of','words'];
 var instructors = [
     { firstname : 'JD', teaches : 'JavaScript'},
     { firstname : 'Tim', teaches : 'JavaScript'},
-    { firstname : 'Brit', teaches : 'Ruby'},
+    { firstname : 'Brit', teaches : ['Ruby', 'JavaScript']},
     { firstname : 'Joe', teaches : 'iOS'},
     { firstname : 'Jake', teaches : 'JavaScript'},
     { firstname : 'Will', teaches : 'JavaScript'},
@@ -14,7 +14,17 @@ var instructors = [
     { firstname : 'James', teaches : 'Ruby'}
 ];
 
+instructors[instructors.length-1].teaches
+// above will give you James and teaches Ruby.
 
+//to get Brit out of the array of objects...
+console.log(instructors[2].firstname)
+//above will print out the firstname, in this case is Brit)
+//instructors is they array which is [2], first name is the objeect which you use a '.' for. 
+
+
+var firstlanguage = instructors[2].teaches[0];
+//will get you the language Brit taught, Ruby. 
 
 // ---------------------------
 // 1. Find largest number
@@ -111,6 +121,21 @@ var findOdds = function (nums){
 // 6. Join Both Arrays Together
 // ---------------------------
 
+var concat = function (items1, items2){
+
+	var result = [];
+
+	for (var i = 0; i < items1.length; i++) {
+		result.push(items1[i]);
+	}
+
+	for (var i = 0; i < items2.length; i++){
+		result.push(items2[2]);
+	}
+
+	return results;
+
+};
 
 
 
@@ -118,3 +143,14 @@ var findOdds = function (nums){
 // 7. Use the Instructors array and find all that teach JavaScript, 
 //    then sort them alphabetically
 // ---------------------------
+
+
+
+
+
+
+
+
+
+
+
