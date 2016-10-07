@@ -69,11 +69,37 @@ for (var count = 0; count < strings.length; count++) {
 // 3. Find even numbers
 // ---------------------------
 
+var findEvens = function (nums){
+	var result = [];
+
+	for (var i = 0; i < nums.length; i++){
+		var currentNum = nums[i];
+		if (currentNum % 2 === 0){
+			result.push(currentNum);
+		}
+	}
+
+
+	return result;
+}
+
 
 // ---------------------------
 // 4. Find odd numbers
 // ---------------------------
+var findOdds = function (nums){
+	var result = [];
 
+	for (var i = 0; i < nums.length; i++){
+		var currentNum = nums[i];
+		if (currentNum % 2 != 0){
+			result.push(currentNum);
+		}
+	}
+
+
+	return result;
+}
 
 // ---------------------------
 // 5. Find words that contain `is`
